@@ -5,7 +5,7 @@ exports.homeRoutes = (req,res) => {
   .then(function(response){
       res.render("index", {users: response.data});
   })
-  .catch(er => {
+  .catch(err => {
     res.send(err);
   });
 };
